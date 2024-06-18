@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    transition: .2s;
+    color: white;
+}
+
+a:hover {
+    color: #d232d2;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #0a0a0a;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 5em;
+    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    background-color: #0a0a0a;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar h1 {
+    font-weight: 500;
+    background-image: linear-gradient(to right, #d232d2, #ee82ee);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 3em;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3em 5em;
+    padding-top: 10em;
+}
+
+.profile-image {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.8);
+    transition: .5s;
+}
+
+.profile-image:hover {
+    transform: rotate(360deg);
+}
+
+.presentation span {
+    background-image: linear-gradient(to right, #d232d2, #ee82ee);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+}
+
+.presentation h2 {
+    font-size: 2.5em;
+    margin-bottom: .5em;
+    font-weight: 300;
+}
+
+.presentation h3 {
+    font-size: 1.5em;
+    margin-bottom: .5em;
+    font-weight: 300;
+}
+
+
+
+#projects {
+    padding: 3em 5em;
+}
+
+#projects h2,
+#habilities h2 {
+    margin-bottom: 3em;
+    font-size: 2em;
+    font-weight: 500;
+    position: relative;
+}
+
+#projects h2::after {
+    content: "";
+    display: block;
+    width: 85%;
+    height: 3px;
+    background-image: linear-gradient(to right, #d232d2, #ee82ee);
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+#habilities h2::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 3px;
+    background-image: linear-gradient(to right, #d232d2, #ee82ee);
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+#projects ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    gap: 2em;
+}
+
+#projects ul li {
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    gap: 1em;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.8);
+    transition: .2s;
+    position: relative;
+    cursor: pointer;
+}
+
+#projects ul li h3 {
+    font-weight: 500;
+}
+
+#projects ul li p {
+    font-weight: 300;
+}
+
+#projects ul li a {
+    color: violet;
+}
+
+#projects ul li a:hover {
+    color: #d232d2;
+}
+
+#projects ul li:hover {
+    transform: translateY(-10px);
+}
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+i {
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.fa-html5 {
+    color: #F4470B;
+}
+
+.fa-css3-alt {
+    color: #0091D5;
+}
+
+.fa-js {
+    color: #EFD81D;
+}
+
+.fa-react {
+    color: #5ED3F3;
+}
+
+.fa-java {
+    color: #F09115;
+}
+
+.fa-database {
+    color: #00718B;
+}
+
+.fa-php {
+    color: #4D588E;
+}
+
+#habilities {
+    display: flex;
+    flex-direction: column;
+    padding: 3em 5em;
+}
+
+.tecnologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tecnologies-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    margin-bottom: 1em;
+    background-color: #111;
+    padding: 2em;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.8);
+    min-width: 175px;
+    min-height: 175px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.tecnologies-items:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 5em;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.social h2 {
+    font-weight: 300;
+}
+
+.social-items {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.social-items i {
+    font-size: 1.5em;
+}
+
+.fa-instagram {
+    color: #D233A9;
+}
+
+.fa-linkedin {
+    color: #0A63BC;
+}
+
+.link-instagram:hover {
+    color: #D233A9;
+}
+
+.link-linkedin:hover {
+    color: #0A63BC;
+}
+
+.link-git:hover {
+    color: #969696;
+}
+
+@media screen and (max-width: 1024px) {
+    #projects h2::after {
+        width: 80%;
+    }
+
+    #habilities h2::after {
+        width: 75%;
+    }
+
+    .tecnologies {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2em;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #projects h2::after {
+        width: 70%;
+    }
+
+    #habilities h2::after {
+        width: 60%;
+    }
+
+    .tecnologies {
+        display: flex;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: start;
+        gap: 1em;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    body {
+        width: auto;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .fa-bars {
+        color: #eee;
+        font-size: 2em;
+    }
+
+    #about {
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    #projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects h2 {
+        text-align: center;
+    }
+
+    #projects h2::after,
+    #habilities h2::after {
+        display: none;
+    }
+
+    #projects ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #habilities {
+        display: flex;
+        align-items: center;
+    }
+
+    .tecnologies {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    .social h2 {
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .fa-bars {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navbar {
+        gap: 1em;
+        padding: 1.5em;
+    }
+
+    #about {
+        padding: 3em 1.5em;
+        padding-top: 8em;
+    }
+
+    #projects {
+        padding: 3em 1.5em;
+    }
+
+    footer {
+        padding: 3em 1.5em;
+    }
+}
